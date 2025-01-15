@@ -1,59 +1,58 @@
-# WrapperBootstrapModalAngular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.7.
+# Wrapper Bootstrap Modal Angular
 
-## Development server
+This project is a wrapper for Bootstrap modals in Angular, enabling centralized management of modals through a service. It allows efficient creation and destruction of modals from any part of the project.
 
-To start a local development server, run:
+## Features
 
-```bash
-ng serve
-```
+- **Centralized Modals**: Modals are managed through a central service, simplifying their creation and destruction.
+- **Component Registration**: Simply create the modal component and register it with the wrapper service.
+- **Simplified Access**: To open a modal from anywhere in the project, instantiate the modal service and create a `modalData` variable specifying the modal name.
+- **Data Passing**: You can pass data to the modal via `modalData.data`.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Installation
 
-## Code scaffolding
+1. Clone the repository:
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+   ```bash
+   git clone https://github.com/JohnSalazar/wrapper-bootstrap-modal-angular.git
+   ```
 
-```bash
-ng generate component component-name
-```
+2. Navigate to the project directory:
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+   ```bash
+   cd wrapper-bootstrap-modal-angular
+   ```
 
-```bash
-ng generate --help
-```
+3. Install the dependencies:
 
-## Building
+   ```bash
+   npm install
+   ```
 
-To build the project run:
+## Usage
 
-```bash
-ng build
-```
+1. Start the development server:
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+   ```bash
+   ng serve
+   ```
 
-## Running unit tests
+2. Open your browser and access `http://localhost:4200/`.
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+3. To create a new modal:
+   - Create the modal component.
+   - Register the component with the wrapper service.
 
-```bash
-ng test
-```
+4. To call a modal from anywhere in the project:
+   - Instantiate the modal service.
+   - Create a `modalData` variable specifying the modal name.
+   - Optionally, pass data to the modal using `modalData.data`.
 
-## Running end-to-end tests
+## License
 
-For end-to-end (e2e) testing, run:
+This project is licensed under the MIT License.
 
-```bash
-ng e2e
-```
+For more details, refer to the [LICENSE](https://github.com/JohnSalazar/wrapper-bootstrap-modal-angular/blob/main/LICENSE) file.
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+This project was developed by [JohnSalazar](https://github.com/JohnSalazar) <img alt="Brazil" src="https://github.com/user-attachments/assets/6340ab49-4afe-43cb-acce-53ab1e2f64c2" width="20" height="14"/> under the [MIT license](LICENSE.txt).
